@@ -1,0 +1,36 @@
+{
+  "name": "vite-node-starter",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite-node -w -r server server/src/index.ts",
+    "lint": "concurrently 'npm:lint:*'",
+    "lint:script": "eslint .",
+    "lint:types": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@tsconfig/node22": "^22.0.0",
+    "@types/node": "^22.13.4",
+    "@unocss/preset-wind3": "^66.0.0",
+    "@vue/eslint-config-prettier": "^10.2.0",
+    "@vue/eslint-config-typescript": "^14.4.0",
+    "@vue/tsconfig": "^0.7.0",
+    "concurrently": "^9.1.2",
+    "eslint": "^9.20.1",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-oxlint": "^0.15.11",
+    "eslint-plugin-vue": "^9.32.0",
+    "prettier": "^3.5.1",
+    "rollup-plugin-node-externals": "^8.0.0",
+    "typescript": "^5.7.3",
+    "unocss": "^66.0.0",
+    "vite": "^6.1.1",
+    "vite-node": "^3.0.6"
+  },
+  "engines": {
+    "pnpm": "^10"
+  }
+}
